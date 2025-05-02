@@ -1,7 +1,9 @@
 <?php
 namespace LeonhardBolschakow\FigmaTokenStudio\ViewHelpers;
 
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
+use LeonhardBolschakow\FigmaTokenStudio\Service\TokenService;
 
 class ConvertJsonToCssViewHelper extends AbstractViewHelper {
 
@@ -20,6 +22,10 @@ class ConvertJsonToCssViewHelper extends AbstractViewHelper {
 
     public function render(): string
     {
+
+        $tokens = TokenService::getTokens();
+        DebuggerUtility::var_dump($tokens);
+
         $json = $this->arguments['json'];
 
         return 'Hallo Welt!';
