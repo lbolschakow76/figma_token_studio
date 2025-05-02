@@ -1,0 +1,14 @@
+{namespace css=LeonhardBolschakow\FigmaTokenStudio\ViewHelpers}
+
+<html data-namespace-typo3-fluid="true" lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://typo3.org/ns/TYPO3Fluid/Fluid/ViewHelpers">
+
+
+<f:layout name="Default" />
+
+<f:section name="Content">
+    {css:convertJsonToCss(json: 'test') -> f:debug()}
+
+    {content -> f:format.raw()}
+</f:section>
