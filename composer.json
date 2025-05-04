@@ -1,5 +1,5 @@
 {
-  "name": "leonhardbolschakow/figma-token-studio",
+  "name": "leonhardbolschakow/figma_token_studio",
   "type": "typo3-cms-extension",
   "description": "Figma Token Studio - Test Template",
 	"require": {

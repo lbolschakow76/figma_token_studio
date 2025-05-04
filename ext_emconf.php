@@ -12,6 +12,7 @@ $EM_CONF[$_EXTKEY] = array (
     'author' => 'Leonhard Bolschakow',
     'author_email' => 'leonhard@bolschakow.de',
     'author_company' => '',
+    'extensionKey' => 'figma_token_studio',
     'constraints' =>
         array (
             'depends' =>
