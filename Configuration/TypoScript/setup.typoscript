@@ -1,5 +1,8 @@
 page = PAGE
 page {
+
+    includeCSS.bootstrapCss = EXT:figma_token_studio/Resources/Public/scss/bootstrap.css
+
     10 = FLUIDTEMPLATE
     10 {
         templateName = TEXT

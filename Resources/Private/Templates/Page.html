@@ -8,7 +8,15 @@
 <f:layout name="Default" />
 
 <f:section name="Content">
-    {css:convertJsonToCss(json: 'test') -> f:debug()}
 
-    {content -> f:format.raw()}
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {content -> f:format.raw()}
+
+                <button type="button" class="btn btn-primary">Senden</button>
+            </div>
+        </div>
+    </div>
+
 </f:section>
